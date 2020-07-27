@@ -1,0 +1,346 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family:"Roboto", sans-serif;
+    font-size: 16px;
+}
+
+/*header container with logo and navbar*/
+
+.header-container {
+    /*border: 1px solid red;*/
+    /*position: fixed;*/
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-family:"Roboto", sans-serif;
+    font-size: 20px bold;
+    height: 100px;
+    align-items: center;
+    padding: 30px 20px;
+    z-index: 12;
+    border: 1px solid blue;
+}
+
+.header-container .logo {
+    color: white;
+    font-size: 40px;
+    font-family: "LEMON MILK", sans-serif;
+    letter-spacing: 3px;
+    flex-grow: 4;
+    padding-left: 15px;
+    opacity: 1;
+    /*border: 1px solid green;*/
+    font-family: "Roboto", sans-serif;
+}
+
+/*Navigation bar with links*/
+.navbar {
+    /*border: 2px solid yellow;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-grow: 3;
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    text-decoration: none;
+    /*border: 5px solid red;*/
+    justify-content: flex-end;
+    margin: auto;
+}
+.nav-links li {
+    align-items: center;
+    /*border: 2px solid purple;*/
+    padding: 5px 20px;
+}
+.nav-links li:hover{
+    opacity: 1;
+    font-weight: bolder;
+    cursor: pointer;
+}
+.nav-links li a {
+    text-decoration: none;
+    color: white; 
+    opacity: 1;
+}
+
+.banner-container {
+    height: 600px;
+    background-image:url('webdevbanner.jpg');
+    
+    /* border: 0.5px solid green; */
+}
+
+.banner-text{
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    top: 300px;
+    position: relative;
+}
+.banner-text-sub{
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    top: 325px;
+    position: relative;
+}
+/*Services*/
+.Services {
+    width: 100%;
+    padding-bottom: 20px;
+}
+.services-heading {
+    width: 100%;
+    text-align: center;
+    color: white;
+    background-color:#200e2f;
+    padding-bottom: 3px;
+    padding-top: 10px;
+}
+.services-heading h2 {
+    color: white;
+    padding-bottom: 0px;
+}
+.services-container {
+    display: flex;
+    flex-direction: row;
+    padding: 30px 10px;
+    padding-bottom: 70px;
+    background-color: #200e2f;
+    margin-top: 0px;
+}
+.service-1 {
+    padding: 100 80px;
+    margin: 10px 40px;
+    line-height: 1.2;
+    border: 1px solid white;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.service-1 i {
+    padding-top: 35px;
+}
+.heading-2 {
+    text-align: center;
+    font-size: 26px;
+    font-family: Helvetica, sans-serif;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    color: white;
+}
+.service-text{
+    line-height: 1.2;
+    padding: 20px 40px;
+    color: #beb4c5;
+}
+
+
+/*Resume Section*/
+.Resume{
+    height: 600px;
+    display: flex;
+    flex-direction: row;
+}
+.resume-box{
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    width: 100%;
+    margin: 20px 70px;
+}
+.resume-header{
+    padding: 0px 20px;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+.resume-container{
+    display: flex;
+    flex-direction: row;    
+    margin: 0px 50px;
+    padding: 20px 40px;
+}
+.resume-container-1 {
+    width: 50%;
+    padding: 20px 30px;
+    color: black;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    /*border: 3px solid green;*/
+    margin-bottom: 40px;
+}
+.resume-text {
+    font-size: 20px;
+    text-align: left;
+    padding: 20px 20px;
+    padding-top: 50px;
+    line-height: 1.5;
+}
+.download-button{
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+    width: 50%;
+    height: 60px;
+    padding-top: 10px;
+    background-color: #200e2f;
+    border-bottom: 3px solid #611568;
+    -webkit-box-shadow: inset 0 -3px #423a42;
+    box-shadow: inset 0 -3px #790f83;
+    cursor: pointer;
+}
+.download-button p{
+    padding: 3px 3px;
+    text-align: center;
+    flex-grow: 1.25;
+}
+.resume-container-2 {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    flex-shrink: 2;
+    /*border: 3px solid green;*/
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+}
+.contact-me {
+    height: 500px;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 30px 30px;
+}
+.social-media ul{
+    display: flex;
+    flex-direction:row;
+    list-style-type: none;
+    justify-content: center;
+}
+.social-media ul li {
+    padding: 5px;
+    margin: 5px;
+}
+h2 {
+	color: #333;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: "Roboto", sans-serif;
+	font-weight: bold;
+	position: relative;
+    margin: 40px 0 60px;
+    
+}
+.col-lg-8 mx-auto h2{
+    margin-bottom: 50px;
+}
+h2::after {
+	content: "";
+	width: 100px;
+	position: absolute;
+	margin: 0 auto;
+	height: 3px;
+	background: purple;
+ 	left: 0;
+	right: 0;
+	bottom: -10px;
+}
+.col-center {
+	margin: 0 auto;
+	float: none !important;
+}
+.carousel {
+	padding: 40px 70px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 20px;
+	text-align: center;
+	overflow: hidden;
+	min-height: 290px;
+}
+.carousel .carousel-item .img-box {
+	width: 135px;
+	height: 135px;
+	margin: 0 auto;
+	padding: 5px;
+	border: 1px solid #ddd;
+	border-radius: 50%;
+}
+.carousel .img-box img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	border-radius: 50%;
+}
+.carousel .testimonial {
+	padding: 30px 0 10px;
+}
+.carousel .overview {	
+
+}
+.carousel .overview b {
+	text-transform: uppercase;
+	color: purple;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 40px;
+	height: 40px;
+	margin-top: -20px;
+	top: 50%;
+	background: none;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 48px;
+	line-height: 42px;
+    position: absolute;
+    top: 50px;
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.8);
+    text-shadow: 0 3px 3px #e6e6e6, 0 0 0 #000;
+}
+.carousel-indicators {
+	bottom: -40px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 12px;
+	height: 12px;
+	margin: 1px 3px;
+	border-radius: 50%;
+	border: none;
+}
+.carousel-indicators li {	
+	background: #999;
+	border-color: transparent;
+    box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+.carousel-indicators li.active {	
+	background: purple;		
+	box-shadow: inset 0 2px 1px rgba(0,0,0,0.2);
+}
+
+.carousel-inner {
+    margin-top: 50px;
+}
+
+h2 {
+    padding-top: 20px;
+    padding-bottom: 0px;
+}
+
+.container-xl {
+    margin: 20px 20px;
+}
